@@ -105,6 +105,8 @@ build_track('data/stheliers.gpx', 'St. Heliers', [5, 5, 5, 5, 5, 5, 5], tracks_f
 build_track('data/hurstmere.gpx', 'Hurstmere Rd.', [1, 1, 1, 1, 1, 1, 1], tracks_fg)
 build_track('data/vicpark.gpx', 'Victoria Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
 build_track('data/waterfront.gpx', 'CBD Waterfront', [4, 4, 4, 4, 4, 4, 4], tracks_fg)
+build_track('data/cornwall.gpx', 'Cornwall Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
+build_track('data/westernsprings.gpx', 'Western Springs', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
 tracks_fg.add_to(m)
 
 # add photos to map
