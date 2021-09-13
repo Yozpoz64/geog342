@@ -2,6 +2,7 @@
 import folium 
 import webbrowser
 import gpxpy
+import matplotlib.pyplot as plt
 
 # this is to change the working dir since spyder sucks at doing it
 import os
@@ -94,46 +95,90 @@ def map_photo(file, telemetry, feature_group):
     folium.Marker(location=telemetry, icon=folium.Icon(icon='camera', prefix='fa'),
             tooltip=folium.Html(popup_html, script=True).render()).add_to(feature_group)
     
+    
+def plot_scores(values, location, axes):
+    #axes.bar(x=FACTORS, height=values)
+    axes.plot(FACTORS, values)
+    plt.xticks(rotation=45)
+    plt.title('Cycling Index Scores at {}'.format(location))
+    axes.set_xlabel('Factor')
+    axes.set_ylabel('Score')
+    
+
+# variables
+
+vicpark = [4, 5, 4, 3, 4, 4, 5]
+stheliers = [3, 4, 2, 3, 2, 2, 1]
+hurstmere = [1, 1, 1, 1, 1, 1, 1] # yet to set
+waterfront = [5, 5, 4, 4, 4, 5, 2]
+cornwall = [4, 4, 1, 3, 0, 0, 5]
+westernsprings = [1, 1, 1, 1, 1, 1, 1] # yet to set
+
+# plot variable scores
+fig, ax = plt.subplots(1, figsize=(12, 7))
+plt.stackplot(FACTORS, 
+              vicpark, 
+              stheliers, 
+              waterfront, 
+              hurstmere,
+              cornwall,
+              westernsprings, labels=['Victoria Park', 'St. Heliers', 
+                                      'Hurstmere Rd.', 'Waterfront', 
+                                      'Cornwall Park', 'Western Springs'])
+plt.xticks(rotation=45)
+plt.title('Stacked Line Plot showing Scores of All Areas of Interest')
+ax.set_xlabel('Factor')
+ax.set_ylabel('Score')
+plt.legend(loc='upper right')
 
 
-# get map object
-m = get_map()
 
-# add files to map
-tracks_fg = folium.FeatureGroup('Areas of interest')
-build_track('data/stheliers.gpx', 'St. Heliers', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
-build_track('data/hurstmere.gpx', 'Hurstmere Rd.', [1, 1, 1, 1, 1, 1, 1], tracks_fg)
-build_track('data/vicpark.gpx', 'Victoria Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
-build_track('data/waterfront.gpx', 'CBD Waterfront', [4, 4, 4, 4, 4, 4, 4], tracks_fg)
-build_track('data/cornwall.gpx', 'Cornwall Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
-build_track('data/westernsprings.gpx', 'Western Springs', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
-tracks_fg.add_to(m)
 
-# add photos to map
-# have to manually add coords bc I was too dumb to remember to save location data in camera app
-photos_fg = folium.FeatureGroup('Photos')
-map_photo('data/photos/stheliers/IMG_20210906_073942_1.jpg', (-36.850889, 174.853941), photos_fg)
-map_photo('data/photos/stheliers/IMG_20210906_074056_1.jpg', (-36.850840, 174.855706), photos_fg)
-map_photo('data/photos/stheliers/IMG_20210906_074119_1.jpg', (-36.850561, 174.856602), photos_fg)
-map_photo('data/photos/stheliers/IMG_20210906_074806.jpg', (-36.848898, 174.860755), photos_fg)
-map_photo('data/photos/stheliers/IMG_20210906_074839.jpg', (-36.849307, 174.860401), photos_fg)
 
-map_photo('data/photos/waterfront/IMG_20210906_081003_1.jpg', (-36.844188, 174.771024), photos_fg)
-map_photo('data/photos/waterfront/IMG_20210906_081022_1.jpg', (-36.843784, 174.769361), photos_fg)
-map_photo('data/photos/waterfront/IMG_20210906_081026_1.jpg', (-36.843587, 174.768642), photos_fg)
-map_photo('data/photos/waterfront/IMG_20210906_081051_1.jpg', (-36.843467, 174.768009), photos_fg)
-map_photo('data/photos/waterfront/IMG_20210906_081122_1.jpg', (-36.843029, 174.766293), photos_fg)
-map_photo('data/photos/waterfront/IMG_20210906_081247.jpg', (-36.843303, 174.763723), photos_fg)
+build_map = False
 
-map_photo('data/photos/vicpark/IMG_20210906_081524_1.jpg', (-36.847607, 174.756422), photos_fg)
-map_photo('data/photos/vicpark/IMG_20210906_081601.jpg', (-36.848169, 174.755548), photos_fg)
-map_photo('data/photos/vicpark/IMG_20210906_081656.jpg', (-36.848491, 174.753386), photos_fg)
-map_photo('data/photos/vicpark/IMG_20210906_081739_1.jpg', (-36.848049, 174.752828), photos_fg)
-map_photo('data/photos/vicpark/IMG_20210906_082003_1.jpg', (-36.848217, 174.756846), photos_fg)
-
-photos_fg.add_to(m)
-
-folium.LayerControl().add_to(m)
-# save and open map in browser
-m.save('index.html')
-webbrowser.open('index.html')
+if build_map:
+  
+    
+    
+    # get map object
+    m = get_map()
+    
+    # add files to map
+    tracks_fg = folium.FeatureGroup('Areas of interest')
+    build_track('data/stheliers.gpx', 'St. Heliers', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
+    build_track('data/hurstmere.gpx', 'Hurstmere Rd.', [1, 1, 1, 1, 1, 1, 1], tracks_fg)
+    build_track('data/vicpark.gpx', 'Victoria Park', vicpark, tracks_fg)
+    build_track('data/waterfront.gpx', 'CBD Waterfront', [4, 4, 4, 4, 4, 4, 4], tracks_fg)
+    build_track('data/cornwall.gpx', 'Cornwall Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
+    build_track('data/westernsprings.gpx', 'Western Springs', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
+    tracks_fg.add_to(m)
+    
+    # add photos to map
+    # have to manually add coords bc I was too dumb to remember to save location data in camera app
+    photos_fg = folium.FeatureGroup('Photos')
+    map_photo('data/photos/stheliers/IMG_20210906_073942_1.jpg', (-36.850889, 174.853941), photos_fg)
+    map_photo('data/photos/stheliers/IMG_20210906_074056_1.jpg', (-36.850840, 174.855706), photos_fg)
+    map_photo('data/photos/stheliers/IMG_20210906_074119_1.jpg', (-36.850561, 174.856602), photos_fg)
+    map_photo('data/photos/stheliers/IMG_20210906_074806.jpg', (-36.848898, 174.860755), photos_fg)
+    map_photo('data/photos/stheliers/IMG_20210906_074839.jpg', (-36.849307, 174.860401), photos_fg)
+    
+    map_photo('data/photos/waterfront/IMG_20210906_081003_1.jpg', (-36.844188, 174.771024), photos_fg)
+    map_photo('data/photos/waterfront/IMG_20210906_081022_1.jpg', (-36.843784, 174.769361), photos_fg)
+    map_photo('data/photos/waterfront/IMG_20210906_081026_1.jpg', (-36.843587, 174.768642), photos_fg)
+    map_photo('data/photos/waterfront/IMG_20210906_081051_1.jpg', (-36.843467, 174.768009), photos_fg)
+    map_photo('data/photos/waterfront/IMG_20210906_081122_1.jpg', (-36.843029, 174.766293), photos_fg)
+    map_photo('data/photos/waterfront/IMG_20210906_081247.jpg', (-36.843303, 174.763723), photos_fg)
+    
+    map_photo('data/photos/vicpark/IMG_20210906_081524_1.jpg', (-36.847607, 174.756422), photos_fg)
+    map_photo('data/photos/vicpark/IMG_20210906_081601.jpg', (-36.848169, 174.755548), photos_fg)
+    map_photo('data/photos/vicpark/IMG_20210906_081656.jpg', (-36.848491, 174.753386), photos_fg)
+    map_photo('data/photos/vicpark/IMG_20210906_081739_1.jpg', (-36.848049, 174.752828), photos_fg)
+    map_photo('data/photos/vicpark/IMG_20210906_082003_1.jpg', (-36.848217, 174.756846), photos_fg)
+    
+    photos_fg.add_to(m)
+    
+    folium.LayerControl().add_to(m)
+    # save and open map in browser
+    m.save('index.html')
+    webbrowser.open('index.html')
