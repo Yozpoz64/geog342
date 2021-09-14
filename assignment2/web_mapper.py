@@ -106,13 +106,17 @@ def plot_scores(values, location, axes):
     
 
 # variables
+'''
+FACTORS = ['Road quality', 'Road surface type', 'Cycle lane type', 'Facilities', 
+           'Bike parking', 'Public transport connection', 'Construction']
+'''
 
 vicpark = [4, 5, 4, 3, 4, 4, 5]
 stheliers = [3, 4, 2, 3, 2, 2, 1]
-hurstmere = [1, 1, 1, 1, 1, 1, 1] # yet to set
+hurstmere = [2, 3, 4, 3, 3, 3, 3] # yet to set
 waterfront = [5, 5, 4, 4, 4, 5, 2]
 cornwall = [4, 4, 1, 3, 0, 0, 5]
-westernsprings = [1, 1, 1, 1, 1, 1, 1] # yet to set
+westernsprings = [4, 5, 5, 2, 1, 2, 5] # yet to set
 
 # plot variable scores
 fig, ax = plt.subplots(1, figsize=(12, 7))
