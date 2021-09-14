@@ -118,13 +118,14 @@ waterfront = [5, 5, 4, 4, 4, 5, 2]
 cornwall = [4, 4, 1, 3, 0, 0, 5]
 westernsprings = [4, 5, 5, 2, 1, 2, 5] 
 
+print(sum(vicpark))
 areas = ['Victoria Park', 'St. Heliers', 'Hurstmere Rd.', 'Waterfront', 'Cornwall Park', 'Western Springs']
-scores = [(sum(vicpark) / 35) * 100, 
-          (sum(stheliers) / 35) * 100,
-          (sum(hurstmere) / 35) * 100,
-          (sum(waterfront) / 35) * 100, 
-          (sum(cornwall) / 35) * 100,
-          (sum(westernsprings) / 35) * 100]
+scores = [100 - (sum(vicpark) / 35) * 100, 
+          100 - (sum(stheliers) / 35) * 100,
+          100 - (sum(hurstmere) / 35) * 100,
+          100 - (sum(waterfront) / 35) * 100, 
+          100 - (sum(cornwall) / 35) * 100,
+          100 - (sum(westernsprings) / 35) * 100]
 
 # plot variable scores
 fig, ax = plt.subplots(1, figsize=(12, 7))
@@ -155,7 +156,7 @@ plt.legend(loc='upper right')
 
 
 
-build_map = False
+build_map = True
 
 if build_map:
   
@@ -166,12 +167,12 @@ if build_map:
     
     # add files to map
     tracks_fg = folium.FeatureGroup('Areas of interest')
-    build_track('data/stheliers.gpx', 'St. Heliers', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
-    build_track('data/hurstmere.gpx', 'Hurstmere Rd.', [1, 1, 1, 1, 1, 1, 1], tracks_fg)
+    build_track('data/stheliers.gpx', 'St. Heliers', stheliers, tracks_fg)
+    build_track('data/hurstmere.gpx', 'Hurstmere Rd.', hurstmere, tracks_fg)
     build_track('data/vicpark.gpx', 'Victoria Park', vicpark, tracks_fg)
-    build_track('data/waterfront.gpx', 'CBD Waterfront', [4, 4, 4, 4, 4, 4, 4], tracks_fg)
-    build_track('data/cornwall.gpx', 'Cornwall Park', [3, 3, 3, 3, 3, 3, 3], tracks_fg)
-    build_track('data/westernsprings.gpx', 'Western Springs', [5, 5, 5, 5, 5, 5, 5], tracks_fg)
+    build_track('data/waterfront.gpx', 'CBD Waterfront', waterfront, tracks_fg)
+    build_track('data/cornwall.gpx', 'Cornwall Park', cornwall, tracks_fg)
+    build_track('data/westernsprings.gpx', 'Western Springs', westernsprings, tracks_fg)
     tracks_fg.add_to(m)
     
     # add photos to map

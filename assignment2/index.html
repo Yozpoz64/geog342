@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_dd622f2c15ae46e090c9e8993bb75c3b {
+                #map_d6f3c09dfed84e8284143a9563e2b7d9 {
                     position: relative;
                     width: 100.0%;
                     height: 85.0%;
@@ -36,13 +36,13 @@
 <body>    
     <h3 align="center" style="font-size:20px"><b>Cycling Index Map</b></h3><h2 align="center" style="font-size:12px">Shows cycling friendliness at chosen locations in Auckland. Created for GEOG342 Assignment 2.</h2>
     
-            <div class="folium-map" id="map_dd622f2c15ae46e090c9e8993bb75c3b" ></div>
+            <div class="folium-map" id="map_d6f3c09dfed84e8284143a9563e2b7d9" ></div>
         
 </body>
 <script>    
     
-            var map_dd622f2c15ae46e090c9e8993bb75c3b = L.map(
-                "map_dd622f2c15ae46e090c9e8993bb75c3b",
+            var map_d6f3c09dfed84e8284143a9563e2b7d9 = L.map(
+                "map_d6f3c09dfed84e8284143a9563e2b7d9",
                 {
                     center: [-36.85, 174.75],
                     crs: L.CRS.EPSG3857,
@@ -51,445 +51,445 @@
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_dd622f2c15ae46e090c9e8993bb75c3b);
+            L.control.scale().addTo(map_d6f3c09dfed84e8284143a9563e2b7d9);
 
             
 
         
     
-            var tile_layer_0d5aceb292f24f7c9bc9973196e47c54 = L.tileLayer(
+            var tile_layer_9de3182e5d4e4e66bf2460ef7e1ffee5 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_dd622f2c15ae46e090c9e8993bb75c3b);
+            ).addTo(map_d6f3c09dfed84e8284143a9563e2b7d9);
         
     
-            var feature_group_c83fcbbb9f8044549299d464b796b78b = L.featureGroup(
+            var feature_group_a9985f21f3b749079a641ddd2972e7be = L.featureGroup(
                 {}
-            ).addTo(map_dd622f2c15ae46e090c9e8993bb75c3b);
+            ).addTo(map_d6f3c09dfed84e8284143a9563e2b7d9);
         
     
-            var poly_line_4cc637b6a1294d32bfa752487c039836 = L.polyline(
+            var poly_line_6e3c5f0539344264a76ddc3d6fc86d05 = L.polyline(
                 [[-36.8497066, 174.8590529], [-36.8499126, 174.8585165], [-36.8499899, 174.8581946], [-36.8501788, 174.8577118], [-36.8503676, 174.8572075], [-36.8505479, 174.8565853], [-36.8507626, 174.8560381], [-36.8507969, 174.8559201]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
-        
-    
-            poly_line_4cc637b6a1294d32bfa752487c039836.bindTooltip(
-                `<div>
-                     <div id="html_6f180376434c4c2a87d4175d89d69f70" style="width: 100.0%; height: 100.0%;"><b>St. Heliers</b><br><br><b>Road quality:</b> 5<br><b>Road surface type:</b> 5<br><b>Cycle lane type:</b> 5<br><b>Facilities:</b> 5<br><b>Bike parking:</b> 5<br><b>Public transport connection:</b> 5<br><b>Construction:</b> 5<br></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var poly_line_771c669162d94ef2bfd7b26d04fc4495 = L.polyline(
-                [[-36.7892591, 174.7722995], [-36.7889755, 174.7723532], [-36.7886319, 174.7724497], [-36.788228, 174.7725034], [-36.7877383, 174.7726429], [-36.7872743, 174.7727501], [-36.7867845, 174.7728789], [-36.7865955, 174.7729111]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
-        
-    
-            poly_line_771c669162d94ef2bfd7b26d04fc4495.bindTooltip(
-                `<div>
-                     <div id="html_7d60c64d8b8a42598d111da2c2fd2799" style="width: 100.0%; height: 100.0%;"><b>Hurstmere Rd.</b><br><br><b>Road quality:</b> 1<br><b>Road surface type:</b> 1<br><b>Cycle lane type:</b> 1<br><b>Facilities:</b> 1<br><b>Bike parking:</b> 1<br><b>Public transport connection:</b> 1<br><b>Construction:</b> 1<br></div>
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var poly_line_8eaddcfc8c4540218c86341da14b68fb = L.polyline(
-                [[-36.8481354, 174.7553265], [-36.8480925, 174.7526658], [-36.8475087, 174.7525799]],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
         
     
-            poly_line_8eaddcfc8c4540218c86341da14b68fb.bindTooltip(
+            poly_line_6e3c5f0539344264a76ddc3d6fc86d05.bindTooltip(
                 `<div>
-                     <div id="html_6bc765bd900740eb9abab831b9ea8581" style="width: 100.0%; height: 100.0%;"><b>Victoria Park</b><br><br><b>Road quality:</b> 3<br><b>Road surface type:</b> 3<br><b>Cycle lane type:</b> 3<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 3<br><b>Public transport connection:</b> 3<br><b>Construction:</b> 3<br></div>
+                     <div id="html_b1c711970394429d857652ccebb597e1" style="width: 100.0%; height: 100.0%;"><b>St. Heliers</b><br><br><b>Road quality:</b> 3<br><b>Road surface type:</b> 4<br><b>Cycle lane type:</b> 2<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 2<br><b>Public transport connection:</b> 2<br><b>Construction:</b> 1<br></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var poly_line_8c73b36e50614e36b4495e48f89e4b9a = L.polyline(
+            var poly_line_c4d5e85195a84453ab16a66c9ec2bbf7 = L.polyline(
+                [[-36.7892591, 174.7722995], [-36.7889755, 174.7723532], [-36.7886319, 174.7724497], [-36.788228, 174.7725034], [-36.7877383, 174.7726429], [-36.7872743, 174.7727501], [-36.7867845, 174.7728789], [-36.7865955, 174.7729111]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
+        
+    
+            poly_line_c4d5e85195a84453ab16a66c9ec2bbf7.bindTooltip(
+                `<div>
+                     <div id="html_445fe32ff737406095ce649dde444564" style="width: 100.0%; height: 100.0%;"><b>Hurstmere Rd.</b><br><br><b>Road quality:</b> 2<br><b>Road surface type:</b> 3<br><b>Cycle lane type:</b> 4<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 3<br><b>Public transport connection:</b> 3<br><b>Construction:</b> 3<br></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a837a0b2510a47e0bc7b34d46e26261a = L.polyline(
+                [[-36.8481354, 174.7553265], [-36.8480925, 174.7526658], [-36.8475087, 174.7525799]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
+        
+    
+            poly_line_a837a0b2510a47e0bc7b34d46e26261a.bindTooltip(
+                `<div>
+                     <div id="html_5b694c7b1e1a415b929b82f3f06eaabb" style="width: 100.0%; height: 100.0%;"><b>Victoria Park</b><br><br><b>Road quality:</b> 4<br><b>Road surface type:</b> 5<br><b>Cycle lane type:</b> 4<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 4<br><b>Public transport connection:</b> 4<br><b>Construction:</b> 5<br></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_24bca013f528478780e0db314dd15206 = L.polyline(
                 [[-36.8428981, 174.765712], [-36.8432759, 174.7672462], [-36.8438168, 174.7691667]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
         
     
-            poly_line_8c73b36e50614e36b4495e48f89e4b9a.bindTooltip(
+            poly_line_24bca013f528478780e0db314dd15206.bindTooltip(
                 `<div>
-                     <div id="html_7f4612a348f647e68baa6fc8e86a3f5e" style="width: 100.0%; height: 100.0%;"><b>CBD Waterfront</b><br><br><b>Road quality:</b> 4<br><b>Road surface type:</b> 4<br><b>Cycle lane type:</b> 4<br><b>Facilities:</b> 4<br><b>Bike parking:</b> 4<br><b>Public transport connection:</b> 4<br><b>Construction:</b> 4<br></div>
+                     <div id="html_9cb983b8beef43b189596018351ef77c" style="width: 100.0%; height: 100.0%;"><b>CBD Waterfront</b><br><br><b>Road quality:</b> 5<br><b>Road surface type:</b> 5<br><b>Cycle lane type:</b> 4<br><b>Facilities:</b> 4<br><b>Bike parking:</b> 4<br><b>Public transport connection:</b> 5<br><b>Construction:</b> 2<br></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var poly_line_7b06c21b18fb45aba005c53f91a1e9b9 = L.polyline(
+            var poly_line_d69afbc2865a468e85efcb837299a816 = L.polyline(
                 [[-36.8975891, 174.7874594], [-36.8968856, 174.7871161], [-36.8966968, 174.7868156], [-36.8964223, 174.7867084], [-36.8962507, 174.7870088], [-36.8958388, 174.7874594], [-36.8953068, 174.7874808]],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
         
     
-            poly_line_7b06c21b18fb45aba005c53f91a1e9b9.bindTooltip(
+            poly_line_d69afbc2865a468e85efcb837299a816.bindTooltip(
                 `<div>
-                     <div id="html_877d43233f8b4c70b114b9379fa09264" style="width: 100.0%; height: 100.0%;"><b>Cornwall Park</b><br><br><b>Road quality:</b> 3<br><b>Road surface type:</b> 3<br><b>Cycle lane type:</b> 3<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 3<br><b>Public transport connection:</b> 3<br><b>Construction:</b> 3<br></div>
+                     <div id="html_5eb2bc95916549c7a0b11d10f60250c7" style="width: 100.0%; height: 100.0%;"><b>Cornwall Park</b><br><br><b>Road quality:</b> 4<br><b>Road surface type:</b> 4<br><b>Cycle lane type:</b> 1<br><b>Facilities:</b> 3<br><b>Bike parking:</b> 0<br><b>Public transport connection:</b> 0<br><b>Construction:</b> 5<br></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var poly_line_f7a9476f95714073bd00acc5d26afa85 = L.polyline(
+            var poly_line_e2a29e0c60c04320908c0fb1171c0d78 = L.polyline(
                 [[-36.8692185, 174.726305], [-36.869313, 174.7258115], [-36.8692271, 174.725275], [-36.8691928, 174.7246742], [-36.8690898, 174.7241163], [-36.869064, 174.7238266], [-36.8690555, 174.7234404], [-36.8689696, 174.72314], [-36.8688924, 174.722625]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
-            ).addTo(feature_group_c83fcbbb9f8044549299d464b796b78b);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(feature_group_a9985f21f3b749079a641ddd2972e7be);
         
     
-            poly_line_f7a9476f95714073bd00acc5d26afa85.bindTooltip(
+            poly_line_e2a29e0c60c04320908c0fb1171c0d78.bindTooltip(
                 `<div>
-                     <div id="html_5a915243f8d7446992a0f099f3174c07" style="width: 100.0%; height: 100.0%;"><b>Western Springs</b><br><br><b>Road quality:</b> 5<br><b>Road surface type:</b> 5<br><b>Cycle lane type:</b> 5<br><b>Facilities:</b> 5<br><b>Bike parking:</b> 5<br><b>Public transport connection:</b> 5<br><b>Construction:</b> 5<br></div>
+                     <div id="html_2fd7504b76594a7d9ce987f6fd2ec8cb" style="width: 100.0%; height: 100.0%;"><b>Western Springs</b><br><br><b>Road quality:</b> 4<br><b>Road surface type:</b> 5<br><b>Cycle lane type:</b> 5<br><b>Facilities:</b> 2<br><b>Bike parking:</b> 1<br><b>Public transport connection:</b> 2<br><b>Construction:</b> 5<br></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var feature_group_505b9c6f16f0497790fc1a79d0491202 = L.featureGroup(
+            var feature_group_9968e57003a64ccca5aaa5edf2a1196c = L.featureGroup(
                 {}
-            ).addTo(map_dd622f2c15ae46e090c9e8993bb75c3b);
+            ).addTo(map_d6f3c09dfed84e8284143a9563e2b7d9);
         
     
-            var marker_459ae20b8a424f2abb3874dd9d047a57 = L.marker(
+            var marker_8fcd955063c44910a731c7bf7ae599f4 = L.marker(
                 [-36.850889, 174.853941],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_ba1afbf3f5514388996f635bc6dbbe26 = L.AwesomeMarkers.icon(
+            var icon_9a76c9854a0a4258a350c6eb8b86bfa0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_459ae20b8a424f2abb3874dd9d047a57.setIcon(icon_ba1afbf3f5514388996f635bc6dbbe26);
+            marker_8fcd955063c44910a731c7bf7ae599f4.setIcon(icon_9a76c9854a0a4258a350c6eb8b86bfa0);
         
     
-            marker_459ae20b8a424f2abb3874dd9d047a57.bindTooltip(
+            marker_8fcd955063c44910a731c7bf7ae599f4.bindTooltip(
                 `<div>
-                     <div id="html_62449e97d3a34aada02656615047c909" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_073942_1.jpg width="250"></div>
+                     <div id="html_00177fdafbdd4fa0b450b6ddf45bfbbd" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_073942_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_5aa989dfbf0c4d25b3489e8ece919365 = L.marker(
+            var marker_1eb0a188a6614a2cbc4d449a97ee25b9 = L.marker(
                 [-36.85084, 174.855706],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_8f469966badc4b68b903f6f872ee4889 = L.AwesomeMarkers.icon(
+            var icon_151c8b2f8c9d4ff685dcddcf34260668 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_5aa989dfbf0c4d25b3489e8ece919365.setIcon(icon_8f469966badc4b68b903f6f872ee4889);
+            marker_1eb0a188a6614a2cbc4d449a97ee25b9.setIcon(icon_151c8b2f8c9d4ff685dcddcf34260668);
         
     
-            marker_5aa989dfbf0c4d25b3489e8ece919365.bindTooltip(
+            marker_1eb0a188a6614a2cbc4d449a97ee25b9.bindTooltip(
                 `<div>
-                     <div id="html_d54666df2f404162b2213fc8a35de632" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074056_1.jpg width="250"></div>
+                     <div id="html_fe525014b9724bf0bde4da7fe59b74e5" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074056_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_8e16def7ad85413791fea814253f0dec = L.marker(
+            var marker_865152f5fcfe44f39cb38ec565872b25 = L.marker(
                 [-36.850561, 174.856602],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_a6c6805257fb48e0979187f6cb32dfdf = L.AwesomeMarkers.icon(
+            var icon_c6ed90c75b794597b1112a0e4b9f386f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_8e16def7ad85413791fea814253f0dec.setIcon(icon_a6c6805257fb48e0979187f6cb32dfdf);
+            marker_865152f5fcfe44f39cb38ec565872b25.setIcon(icon_c6ed90c75b794597b1112a0e4b9f386f);
         
     
-            marker_8e16def7ad85413791fea814253f0dec.bindTooltip(
+            marker_865152f5fcfe44f39cb38ec565872b25.bindTooltip(
                 `<div>
-                     <div id="html_f9e9191010c44d86aaad9ef0908f721b" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074119_1.jpg width="250"></div>
+                     <div id="html_d95f83c9fdf44a2f9e21ba80f1c049a7" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074119_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_48fa239ef79b4efcb96d1c5c51bd3134 = L.marker(
+            var marker_f57068bf9c70420487f8322d2307c4a1 = L.marker(
                 [-36.848898, 174.860755],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_f40868b47d9440c9b4ad5685cbb6eb3e = L.AwesomeMarkers.icon(
+            var icon_f4165d3d3e7f49df841801d8e7edcca9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_48fa239ef79b4efcb96d1c5c51bd3134.setIcon(icon_f40868b47d9440c9b4ad5685cbb6eb3e);
+            marker_f57068bf9c70420487f8322d2307c4a1.setIcon(icon_f4165d3d3e7f49df841801d8e7edcca9);
         
     
-            marker_48fa239ef79b4efcb96d1c5c51bd3134.bindTooltip(
+            marker_f57068bf9c70420487f8322d2307c4a1.bindTooltip(
                 `<div>
-                     <div id="html_271cd233f127423995b9bbc7258cede3" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074806.jpg width="250"></div>
+                     <div id="html_1edf251896574fa8be0d32621fe81032" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074806.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_31722589fa6741deac2300dbefe0ff42 = L.marker(
+            var marker_f1ca79ed8f384cbdbff8bba01f6bfdab = L.marker(
                 [-36.849307, 174.860401],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_568709f8d8294feb94efd5eb3197d9e0 = L.AwesomeMarkers.icon(
+            var icon_5688db7c10264766beb5fbee0f2bb14c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_31722589fa6741deac2300dbefe0ff42.setIcon(icon_568709f8d8294feb94efd5eb3197d9e0);
+            marker_f1ca79ed8f384cbdbff8bba01f6bfdab.setIcon(icon_5688db7c10264766beb5fbee0f2bb14c);
         
     
-            marker_31722589fa6741deac2300dbefe0ff42.bindTooltip(
+            marker_f1ca79ed8f384cbdbff8bba01f6bfdab.bindTooltip(
                 `<div>
-                     <div id="html_cc2bff36c8c84e6781f80282138599b0" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074839.jpg width="250"></div>
+                     <div id="html_0402831b6ee54f098288875873df85d2" style="width: 100.0%; height: 100.0%;"><img src=data/photos/stheliers/IMG_20210906_074839.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_0dc3e620b9ea40688957c98b5df58016 = L.marker(
+            var marker_684c073f73cf4026b56dcdc8524a1d78 = L.marker(
                 [-36.844188, 174.771024],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_2c40995294a64f0ea38185db1147ed86 = L.AwesomeMarkers.icon(
+            var icon_0b7afcd29f7a4886a19393c01d783061 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_0dc3e620b9ea40688957c98b5df58016.setIcon(icon_2c40995294a64f0ea38185db1147ed86);
+            marker_684c073f73cf4026b56dcdc8524a1d78.setIcon(icon_0b7afcd29f7a4886a19393c01d783061);
         
     
-            marker_0dc3e620b9ea40688957c98b5df58016.bindTooltip(
+            marker_684c073f73cf4026b56dcdc8524a1d78.bindTooltip(
                 `<div>
-                     <div id="html_d1336ece335c47b9a53bc194963841e4" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081003_1.jpg width="250"></div>
+                     <div id="html_c51e78a2ac47403e8ac949da353330ea" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081003_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_2437df2045da42b4b04f2107464ea5b8 = L.marker(
+            var marker_fa37ba64c4f4445ca14b1ced74fcf64d = L.marker(
                 [-36.843784, 174.769361],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_a8a61aa3fa9f4c6ba018d85425c45e05 = L.AwesomeMarkers.icon(
+            var icon_1c17c2d710ca49c496bbcc67d91b7500 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_2437df2045da42b4b04f2107464ea5b8.setIcon(icon_a8a61aa3fa9f4c6ba018d85425c45e05);
+            marker_fa37ba64c4f4445ca14b1ced74fcf64d.setIcon(icon_1c17c2d710ca49c496bbcc67d91b7500);
         
     
-            marker_2437df2045da42b4b04f2107464ea5b8.bindTooltip(
+            marker_fa37ba64c4f4445ca14b1ced74fcf64d.bindTooltip(
                 `<div>
-                     <div id="html_87e926069fd14ccebabce3f931e76d65" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081022_1.jpg width="250"></div>
+                     <div id="html_25e7de01e2cd46569c52d4c9f74bf214" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081022_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_7b796ed4b97848b98c76859893a56674 = L.marker(
+            var marker_0dacdfa5a24b4e48ae9e25965219424e = L.marker(
                 [-36.843587, 174.768642],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_b1ec7d1d4a9c463f8bf07a23a89503ee = L.AwesomeMarkers.icon(
+            var icon_e3b4a04acae84d5ebc3a36f441f222b0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_7b796ed4b97848b98c76859893a56674.setIcon(icon_b1ec7d1d4a9c463f8bf07a23a89503ee);
+            marker_0dacdfa5a24b4e48ae9e25965219424e.setIcon(icon_e3b4a04acae84d5ebc3a36f441f222b0);
         
     
-            marker_7b796ed4b97848b98c76859893a56674.bindTooltip(
+            marker_0dacdfa5a24b4e48ae9e25965219424e.bindTooltip(
                 `<div>
-                     <div id="html_1eaff0f963ab47b3b3433e6b5681e85b" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081026_1.jpg width="250"></div>
+                     <div id="html_b00d5167467f48859e5b8978d070eb5c" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081026_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_63740ee690614b209bece57e7135af95 = L.marker(
+            var marker_316ba4895bcc4b3bba948205a43e26ab = L.marker(
                 [-36.843467, 174.768009],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_597b0b8b019b423387d37cec194a08fe = L.AwesomeMarkers.icon(
+            var icon_e26f32832e004fe0b481a838b7d85f00 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_63740ee690614b209bece57e7135af95.setIcon(icon_597b0b8b019b423387d37cec194a08fe);
+            marker_316ba4895bcc4b3bba948205a43e26ab.setIcon(icon_e26f32832e004fe0b481a838b7d85f00);
         
     
-            marker_63740ee690614b209bece57e7135af95.bindTooltip(
+            marker_316ba4895bcc4b3bba948205a43e26ab.bindTooltip(
                 `<div>
-                     <div id="html_ea9a5afebd4140de9ace81caf33c1a97" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081051_1.jpg width="250"></div>
+                     <div id="html_2a25a22bda884f0bb277ed2b66c52ff8" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081051_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_d803060b3f484f26a1cc65feca12af14 = L.marker(
+            var marker_80b0851286574801a1b881af1d354206 = L.marker(
                 [-36.843029, 174.766293],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_9ad5f2afd08440debf9963ea01f34427 = L.AwesomeMarkers.icon(
+            var icon_095c1550138f46b195d2d786a97fa1f0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_d803060b3f484f26a1cc65feca12af14.setIcon(icon_9ad5f2afd08440debf9963ea01f34427);
+            marker_80b0851286574801a1b881af1d354206.setIcon(icon_095c1550138f46b195d2d786a97fa1f0);
         
     
-            marker_d803060b3f484f26a1cc65feca12af14.bindTooltip(
+            marker_80b0851286574801a1b881af1d354206.bindTooltip(
                 `<div>
-                     <div id="html_5178079a854444d69f3b70dadcc7f211" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081122_1.jpg width="250"></div>
+                     <div id="html_840d9d4889834d629c2f14fa59c18d14" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081122_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_5be9fe2022cc4d8189103c9c041f8ad2 = L.marker(
+            var marker_d5bcc92a9abd4daeab0cc654daa843a1 = L.marker(
                 [-36.843303, 174.763723],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_8b60a6adad63405b99f1cefce52c7cda = L.AwesomeMarkers.icon(
+            var icon_9df0a5ac6bb0434098a88fcb0efb6213 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_5be9fe2022cc4d8189103c9c041f8ad2.setIcon(icon_8b60a6adad63405b99f1cefce52c7cda);
+            marker_d5bcc92a9abd4daeab0cc654daa843a1.setIcon(icon_9df0a5ac6bb0434098a88fcb0efb6213);
         
     
-            marker_5be9fe2022cc4d8189103c9c041f8ad2.bindTooltip(
+            marker_d5bcc92a9abd4daeab0cc654daa843a1.bindTooltip(
                 `<div>
-                     <div id="html_c22eb63478e2457d89d0c5a3d9abc2ed" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081247.jpg width="250"></div>
+                     <div id="html_dcc76ab9c14d4abfa67371d7d3a7ff94" style="width: 100.0%; height: 100.0%;"><img src=data/photos/waterfront/IMG_20210906_081247.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_9ec60c3d60e64e14a53df9e955db649c = L.marker(
+            var marker_76ec749db5ae44adb13a4bc656a755e5 = L.marker(
                 [-36.847607, 174.756422],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_b5dbe4cc0a924f098ada4ae0733033c2 = L.AwesomeMarkers.icon(
+            var icon_e4117c68e65f4d2683e185bc1c3de82c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_9ec60c3d60e64e14a53df9e955db649c.setIcon(icon_b5dbe4cc0a924f098ada4ae0733033c2);
+            marker_76ec749db5ae44adb13a4bc656a755e5.setIcon(icon_e4117c68e65f4d2683e185bc1c3de82c);
         
     
-            marker_9ec60c3d60e64e14a53df9e955db649c.bindTooltip(
+            marker_76ec749db5ae44adb13a4bc656a755e5.bindTooltip(
                 `<div>
-                     <div id="html_935e69bbae9f4f6bbb222ec259dfe056" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081524_1.jpg width="250"></div>
+                     <div id="html_ac910c193ae442ea9adc7932569c79c9" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081524_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_e8f166d00fe241619a6ea69c8ef84e2f = L.marker(
+            var marker_0f92c43ab48f4d31bfb56a96948a7564 = L.marker(
                 [-36.848169, 174.755548],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_b4cf0fadf6d4488c950b16f2b796aafb = L.AwesomeMarkers.icon(
+            var icon_115cd6cce704438dac6580e068335f66 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_e8f166d00fe241619a6ea69c8ef84e2f.setIcon(icon_b4cf0fadf6d4488c950b16f2b796aafb);
+            marker_0f92c43ab48f4d31bfb56a96948a7564.setIcon(icon_115cd6cce704438dac6580e068335f66);
         
     
-            marker_e8f166d00fe241619a6ea69c8ef84e2f.bindTooltip(
+            marker_0f92c43ab48f4d31bfb56a96948a7564.bindTooltip(
                 `<div>
-                     <div id="html_1531e78be0754ce5bd96ec08725cd549" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081601.jpg width="250"></div>
+                     <div id="html_ee420e9924f74231ac1169be602bf1f0" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081601.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_7097135508cb414ea8cf0e39c74a9c32 = L.marker(
+            var marker_6530e51e8c63431f9ae31a17d62e22dd = L.marker(
                 [-36.848491, 174.753386],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_406ac8c36a074aafaa6c12e75ece4aa7 = L.AwesomeMarkers.icon(
+            var icon_ee8f16a556eb47038fb32ead434bef98 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_7097135508cb414ea8cf0e39c74a9c32.setIcon(icon_406ac8c36a074aafaa6c12e75ece4aa7);
+            marker_6530e51e8c63431f9ae31a17d62e22dd.setIcon(icon_ee8f16a556eb47038fb32ead434bef98);
         
     
-            marker_7097135508cb414ea8cf0e39c74a9c32.bindTooltip(
+            marker_6530e51e8c63431f9ae31a17d62e22dd.bindTooltip(
                 `<div>
-                     <div id="html_fcf91eb246844dd18e55492db9a19cdd" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081656.jpg width="250"></div>
+                     <div id="html_2ac4da1abd62478c8c17d5fb35b4e83d" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081656.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_8da0a5273c7e4c048ea5ef1cfffe9e9d = L.marker(
+            var marker_e003ff9b281244eebf7c35f9ba7106e3 = L.marker(
                 [-36.848049, 174.752828],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_e11d5b0ea7c34908a71986d5b764154d = L.AwesomeMarkers.icon(
+            var icon_549422da013f414aa59b52fcfc32f60d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_8da0a5273c7e4c048ea5ef1cfffe9e9d.setIcon(icon_e11d5b0ea7c34908a71986d5b764154d);
+            marker_e003ff9b281244eebf7c35f9ba7106e3.setIcon(icon_549422da013f414aa59b52fcfc32f60d);
         
     
-            marker_8da0a5273c7e4c048ea5ef1cfffe9e9d.bindTooltip(
+            marker_e003ff9b281244eebf7c35f9ba7106e3.bindTooltip(
                 `<div>
-                     <div id="html_e11505109c1b47619325bb9cb00cfb99" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081739_1.jpg width="250"></div>
+                     <div id="html_8dbe65662b5749378dddd1ad2f8120b7" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_081739_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var marker_bf443c788e56420ba8d88b861f1e60a7 = L.marker(
+            var marker_c21321a9d5744d20b4c9822123c18882 = L.marker(
                 [-36.848217, 174.756846],
                 {}
-            ).addTo(feature_group_505b9c6f16f0497790fc1a79d0491202);
+            ).addTo(feature_group_9968e57003a64ccca5aaa5edf2a1196c);
         
     
-            var icon_e011bcc2fb4f4aa7ae949fe98087918e = L.AwesomeMarkers.icon(
+            var icon_b653ac97324a4a00a4e8aa522aacf097 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "camera", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
             );
-            marker_bf443c788e56420ba8d88b861f1e60a7.setIcon(icon_e011bcc2fb4f4aa7ae949fe98087918e);
+            marker_c21321a9d5744d20b4c9822123c18882.setIcon(icon_b653ac97324a4a00a4e8aa522aacf097);
         
     
-            marker_bf443c788e56420ba8d88b861f1e60a7.bindTooltip(
+            marker_c21321a9d5744d20b4c9822123c18882.bindTooltip(
                 `<div>
-                     <div id="html_6b083f4193534ecd8ff26be594adfeae" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_082003_1.jpg width="250"></div>
+                     <div id="html_532a89f7836f4e6e924ebf3237551dcd" style="width: 100.0%; height: 100.0%;"><img src=data/photos/vicpark/IMG_20210906_082003_1.jpg width="250"></div>
                  </div>`,
                 {"sticky": true}
             );
         
     
-            var layer_control_b8aadbc923ab470dbb45f1fa34f0e429 = {
+            var layer_control_e3ea5a78174b4612b1b9afc9eed74454 = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_0d5aceb292f24f7c9bc9973196e47c54,
+                    "openstreetmap" : tile_layer_9de3182e5d4e4e66bf2460ef7e1ffee5,
                 },
                 overlays :  {
-                    "Areas of interest" : feature_group_c83fcbbb9f8044549299d464b796b78b,
-                    "Photos" : feature_group_505b9c6f16f0497790fc1a79d0491202,
+                    "Areas of interest" : feature_group_a9985f21f3b749079a641ddd2972e7be,
+                    "Photos" : feature_group_9968e57003a64ccca5aaa5edf2a1196c,
                 },
             };
             L.control.layers(
-                layer_control_b8aadbc923ab470dbb45f1fa34f0e429.base_layers,
-                layer_control_b8aadbc923ab470dbb45f1fa34f0e429.overlays,
+                layer_control_e3ea5a78174b4612b1b9afc9eed74454.base_layers,
+                layer_control_e3ea5a78174b4612b1b9afc9eed74454.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_dd622f2c15ae46e090c9e8993bb75c3b);
+            ).addTo(map_d6f3c09dfed84e8284143a9563e2b7d9);
         
 </script>
