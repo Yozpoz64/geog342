@@ -113,21 +113,28 @@ FACTORS = ['Road quality', 'Road surface type', 'Cycle lane type', 'Facilities',
 
 vicpark = [4, 5, 4, 3, 4, 4, 5]
 stheliers = [3, 4, 2, 3, 2, 2, 1]
-hurstmere = [2, 3, 4, 3, 3, 3, 3] # yet to set
+hurstmere = [2, 3, 4, 3, 3, 3, 3] 
 waterfront = [5, 5, 4, 4, 4, 5, 2]
 cornwall = [4, 4, 1, 3, 0, 0, 5]
-westernsprings = [4, 5, 5, 2, 1, 2, 5] # yet to set
+westernsprings = [4, 5, 5, 2, 1, 2, 5] 
 
 areas = ['Victoria Park', 'St. Heliers', 'Hurstmere Rd.', 'Waterfront', 'Cornwall Park', 'Western Springs']
-scores = [4, 2, 3, 5, 0, 2]
+scores = [(sum(vicpark) / 35) * 100, 
+          (sum(stheliers) / 35) * 100,
+          (sum(hurstmere) / 35) * 100,
+          (sum(waterfront) / 35) * 100, 
+          (sum(cornwall) / 35) * 100,
+          (sum(westernsprings) / 35) * 100]
 
 # plot variable scores
 fig, ax = plt.subplots(1, figsize=(12, 7))
-ax.bar(x=areas, height=scores, color='orange')
+ax.bar(x=areas, height=scores, color=['green', 'red', 'orange', 
+                                      'green', 'red', 'orange'])
 plt.xticks(rotation=45)
-plt.title('Public Transport Connection Scores')
+plt.yticks([0, 20, 40, 60, 80, 100])
+plt.title('Deprivation Scores for all Areas of Interest')
 ax.set_xlabel('Area of Interest')
-ax.set_ylabel('Public Transport Connection Score')
+ax.set_ylabel('Level of Deprivation (%)')
 '''
 plt.stackplot(FACTORS, 
               vicpark, 
