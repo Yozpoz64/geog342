@@ -97,8 +97,8 @@ def map_photo(file, telemetry, feature_group):
     
     
 def plot_scores(values, location, axes):
-    #axes.bar(x=FACTORS, height=values)
-    axes.plot(FACTORS, values)
+    axes.bar(x=FACTORS, height=values)
+    #axes.plot(FACTORS, values)
     plt.xticks(rotation=45)
     plt.title('Cycling Index Scores at {}'.format(location))
     axes.set_xlabel('Factor')
@@ -118,8 +118,17 @@ waterfront = [5, 5, 4, 4, 4, 5, 2]
 cornwall = [4, 4, 1, 3, 0, 0, 5]
 westernsprings = [4, 5, 5, 2, 1, 2, 5] # yet to set
 
+areas = ['Victoria Park', 'St. Heliers', 'Hurstmere Rd.', 'Waterfront', 'Cornwall Park', 'Western Springs']
+scores = [4, 2, 3, 5, 0, 2]
+
 # plot variable scores
 fig, ax = plt.subplots(1, figsize=(12, 7))
+ax.bar(x=areas, height=scores, color='orange')
+plt.xticks(rotation=45)
+plt.title('Public Transport Connection Scores')
+ax.set_xlabel('Area of Interest')
+ax.set_ylabel('Public Transport Connection Score')
+'''
 plt.stackplot(FACTORS, 
               vicpark, 
               stheliers, 
@@ -134,7 +143,7 @@ plt.title('Stacked Line Plot showing Scores of All Areas of Interest')
 ax.set_xlabel('Factor')
 ax.set_ylabel('Score')
 plt.legend(loc='upper right')
-
+'''
 
 
 
